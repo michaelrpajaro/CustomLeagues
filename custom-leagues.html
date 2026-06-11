@@ -547,5 +547,13 @@ function clTab(tab) {
     div[style*="grid-template-columns:repeat(4,1fr)"]{
         grid-template-columns:repeat(2,1fr) !important;
     }
+    /* Option A / Option B race format boxes — stack on mobile */
+    div[style*="grid-template-columns:1fr 1fr"]{
+        grid-template-columns:1fr !important;
+    }
+    /* Inner label column inside Option A/B rows — give it more room */
+    div[style*="grid-template-columns:110px 1fr"]{
+        grid-template-columns:90px 1fr !important;
+    }
 }
 </style>
